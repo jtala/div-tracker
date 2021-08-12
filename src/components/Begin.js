@@ -1,7 +1,12 @@
 import React from "react";
 
 const Begin = () => (
-    <div>How many shares of VTI do you have?</div>
+    <div className="wrapper">How many shares of VTI do you have?
+    <form>
+        <input type="text"></input>
+    </form>
+    <button onClick="calc()">Calculate</button>
+    </div>
 )
 
 export default Begin;
