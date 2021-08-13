@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       <Begin></Begin>
-      <button onClick={getStockData}></button>
+      <button onClick={getStockData}>Click for VTI Data</button>
       <Dividends></Dividends>
     </div>
   );
