@@ -7,12 +7,15 @@ import './App.css';
 function App() {
 
   const getStockData = () => {
-    Axios.get()
+    Axios.get("https://eodhistoricaldata.com/api/fundamentals/VTI.US?api_token=OeAFFmMliFG5orCUuwAKQ8l4WWFQ67YX").then((response) => {
+      console.log(response);
+    })
   }
 
   return (
     <div>
       <Begin></Begin>
+      <button onClick={getStockData}></button>
       <Dividends></Dividends>
     </div>
   );
