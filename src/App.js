@@ -8,7 +8,10 @@ function App() {
 
   const getStockData = () => {
     Axios.get("https://eodhistoricaldata.com/api/fundamentals/VTI.US?api_token=OeAFFmMliFG5orCUuwAKQ8l4WWFQ67YX").then((response) => {
-      console.log(response);
+      console.log(response.data.ETF_Data.Holdings);
+
+
+      // 1. Want to get name, ticker
     })
   }
 
