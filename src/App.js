@@ -10,9 +10,11 @@ function App() {
 
   const getStockData = () => {
     Axios.get("https://eodhistoricaldata.com/api/fundamentals/VTI.US?api_token=OeAFFmMliFG5orCUuwAKQ8l4WWFQ67YX").then((response) => {
-      let holdings = response.data.ETF_Data.Holdings["Apple Inc"].Code;
-      console.log(holdings);
-      return getData[holdings];
+      let holdings = response.data.ETF_Data.Holdings;
+      
+      for (let [key,value] of Object.entries(holdings)){
+        console.log(key, value);
+      }
     }
     )
   };
