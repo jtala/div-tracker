@@ -5,7 +5,6 @@ const Begin = () => (
     <form>
         <input type="text"></input>
     </form>
-    {/* <button onClick="calc()">Calculate</button> */}
     </div>
 )
 

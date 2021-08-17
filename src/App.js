@@ -1,6 +1,9 @@
 import React, {useState} from "react";
 import Axios from "axios";
-import Begin from "./components/Begin"
+import Begin from "./components/Begin";
+// import Dividends from "./components/Dividends";
+
+
 import './App.css';
 
 function App() {
@@ -17,12 +20,16 @@ function App() {
   };
 
   const updateHoldings = () => {
-    // for (let [key,value] of Object.entries(holdings)){
-    //   console.log(key, value);
-    // }
+    let secName;
+    let secData; 
+
+    for (let [key,value] of Object.entries(holdings)){
+      console.log(value.Code, value.Name);
+    }
 
     
-    // updateData(holdings.toString());
+
+    // updateData(JSON.stringify(holdings));
   }
 
 
@@ -31,7 +38,7 @@ function App() {
       <Begin></Begin>
       <button onClick={getStockData}>Click for VTI Data</button>
       <button onClick={updateHoldings}>Click to refresh data</button>
-      <h1>{data}</h1> 
+      {data}
     </div>
   );
 }
