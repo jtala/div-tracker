@@ -7,7 +7,6 @@ import './App.css';
 
 function App() {
 
-  const [data, updateData] = useState([]);
   let holdings;
  
 
