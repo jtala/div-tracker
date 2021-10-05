@@ -10,7 +10,7 @@ function App() {
   let holdings;
  
 
-  const getStockData = (holdings = []) => {
+  const getStockData = () => {
     Axios.get("https://eodhistoricaldata.com/api/fundamentals/VTI.US?api_token=OeAFFmMliFG5orCUuwAKQ8l4WWFQ67YX")
     .then((response) => {
 
