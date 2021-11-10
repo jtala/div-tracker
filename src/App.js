@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Axios from "axios";
 import Begin from "./components/Begin";
+import Dividends from "./components/Dividends";
 import './App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
     <div>
       <Begin></Begin>
       <button onClick={getStockData}>Click for VTI Data</button>
+      <Dividends></Dividends>
     </div>
   );
 }
