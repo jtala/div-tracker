@@ -15,6 +15,7 @@ function App() {
 
     holdings = Object.values(response.data.ETF_Data.Holdings);
     console.log(holdings);
+    
   }) 
   };
 
