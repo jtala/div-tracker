@@ -17,6 +17,8 @@ function App() {
     console.log(holdings);
 
     // Meaningful progress?
+
+    // My tendency to procrastinate is crazy.
     
   }) 
   };
